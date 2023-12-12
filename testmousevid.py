@@ -21,8 +21,8 @@ time.sleep(10) #gives you some time to move to desired application window
 print(pyautogui.displayMousePosition) #use this to indicate cursor coordinates
 
 for k in range(300): #amount of video's frames containing in storage2/
-    x=67 #coordinates of center of pixel in upper left corner of your virtual screen minus range in 34th line
-    y=39 #coordinates of center of pixel in upper left corner of your virtual screen minus range in 31th line
+    x=67 #coordinates of center of pixel in upper left corner of your virtual screen MINUS range in 34th line
+    y=39 #coordinates of center of pixel in upper left corner of your virtual screen MINUS range in 31th line
     
     im = cv2.imread('storage2/split_video007_'+str(k//100)+str(k//10%10)+str(k%10)+'.jpg',cv2.IMREAD_GRAYSCALE)
     im2=cv2.threshold(im, 128, 255, cv2.THRESH_BINARY)[1] #turns original frame into more clear one (only black and white)
