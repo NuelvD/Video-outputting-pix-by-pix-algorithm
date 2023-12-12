@@ -57,4 +57,4 @@ for k in range(300): #amount of video's frames containing in storage2/
                 pyautogui.moveTo(x,y)
                 keyboard.send('f') #same hotkey that turns lamp off
 
-keyboard.send('esc') #sign that your code is completed all frames (here it pauses the game)
+keyboard.send('esc') #sign that your code completed all frames (here it pauses the game)
